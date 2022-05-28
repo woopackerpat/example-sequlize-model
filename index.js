@@ -170,6 +170,7 @@ const run = async () => {
   //   dueDate: "2022-05-13",
   // });
   // console.log(todo);
+
   //logging instance
   // const todo = await Todo.create({
   //   title: "Exercise",
@@ -187,6 +188,7 @@ const run = async () => {
   //   {title: 'Dentist', dueDate: '2022-05-01'},
   //   {title: 'Shopping'}
   // ])
+
   // static update
   // const todo = await Todo.update({title: 'Meeting', dueDate: '2023-01-01'}, {where: {id: 4}})
   //static delete
@@ -296,9 +298,9 @@ const run = async () => {
   // });
   // console.log(JSON.stringify(user, null, 2));
 
-  const todo = await Todo.findAll({
-    include: User
-  })
+  // const todo = await Todo.findAll({
+  //   include: User
+  // })
 
   console.log(JSON.stringify(todo, null, 2))
 
